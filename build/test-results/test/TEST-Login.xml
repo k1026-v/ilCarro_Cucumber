@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login" tests="4" skipped="0" failures="1" errors="0" timestamp="2023-07-11T10:50:55" hostname="DESKTOP-OS617JJ" time="25.569">
+  <properties/>
+  <testcase name="Login with valid email and wrong password #1" classname="Login" time="10.07"/>
+  <testcase name="Login with valid email and wrong password #2" classname="Login" time="5.284"/>
+  <testcase name="Login with valid email and wrong password #3" classname="Login" time="5.005"/>
+  <testcase name="Login with valid email and wrong password #4" classname="Login" time="5.21">
+    <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
+	at com.ilCarro.pages.LoginPage.getError(LoginPage.java:58)
+	at com.ilCarro.stepDefinitions.LoginSteps.verifies_error(LoginSteps.java:45)
+	at ✽.User verifies error(file:///C:/MyAIT/QA/ilCarro_Cucumber/src/test/resources/features/login.feature:25)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@wrongPassword
+Scenario Outline: Login with valid email and wrong password ?[90m# src/test/resources/features/login.feature:29?[0m
+  ?[32mGiven ?[0m?[32mUser launches browser?[0m                               ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.launches_browser()?[0m
+  ?[32mWhen ?[0m?[32mUser opens ilCarro Home Page?[0m                         ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.open_ilCarro_HomePage()?[0m
+  ?[32mAnd ?[0m?[32mUser clicks on log in link?[0m                            ?[90m# com.ilCarro.stepDefinitions.LoginSteps.clicks_on_log_i_link()?[0m
+  ?[32mAnd ?[0m?[32mUser enters email and wrong password?[0m                  ?[90m# com.ilCarro.stepDefinitions.LoginSteps.enter_email_and_wrong_password(io.cucumber.datatable.DataTable)?[0m
+    | email       | password |
+    | kiv@ukr.net | 123456   |
+  ?[32mAnd ?[0m?[32mUser clicks ov Yalla button?[0m                           ?[90m# com.ilCarro.stepDefinitions.LoginSteps.clicks_ov_Yalla_button()?[0m
+  ?[32mThen ?[0m?[32mUser verifies error?[0m                                  ?[90m# com.ilCarro.stepDefinitions.LoginSteps.verifies_error()?[0m
+  ?[32mAnd ?[0m?[32mUser quits browser?[0m                                    ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.quit_browser()?[0m
+
+@wrongPassword
+Scenario Outline: Login with valid email and wrong password ?[90m# src/test/resources/features/login.feature:30?[0m
+  ?[32mGiven ?[0m?[32mUser launches browser?[0m                               ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.launches_browser()?[0m
+  ?[32mWhen ?[0m?[32mUser opens ilCarro Home Page?[0m                         ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.open_ilCarro_HomePage()?[0m
+  ?[32mAnd ?[0m?[32mUser clicks on log in link?[0m                            ?[90m# com.ilCarro.stepDefinitions.LoginSteps.clicks_on_log_i_link()?[0m
+  ?[32mAnd ?[0m?[32mUser enters email and wrong password?[0m                  ?[90m# com.ilCarro.stepDefinitions.LoginSteps.enter_email_and_wrong_password(io.cucumber.datatable.DataTable)?[0m
+    | email       | password   |
+    | kiv@ukr.net | 123456758C |
+  ?[32mAnd ?[0m?[32mUser clicks ov Yalla button?[0m                           ?[90m# com.ilCarro.stepDefinitions.LoginSteps.clicks_ov_Yalla_button()?[0m
+  ?[32mThen ?[0m?[32mUser verifies error?[0m                                  ?[90m# com.ilCarro.stepDefinitions.LoginSteps.verifies_error()?[0m
+  ?[32mAnd ?[0m?[32mUser quits browser?[0m                                    ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.quit_browser()?[0m
+
+@wrongPassword
+Scenario Outline: Login with valid email and wrong password ?[90m# src/test/resources/features/login.feature:31?[0m
+  ?[32mGiven ?[0m?[32mUser launches browser?[0m                               ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.launches_browser()?[0m
+  ?[32mWhen ?[0m?[32mUser opens ilCarro Home Page?[0m                         ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.open_ilCarro_HomePage()?[0m
+  ?[32mAnd ?[0m?[32mUser clicks on log in link?[0m                            ?[90m# com.ilCarro.stepDefinitions.LoginSteps.clicks_on_log_i_link()?[0m
+  ?[32mAnd ?[0m?[32mUser enters email and wrong password?[0m                  ?[90m# com.ilCarro.stepDefinitions.LoginSteps.enter_email_and_wrong_password(io.cucumber.datatable.DataTable)?[0m
+    | email       | password   |
+    | kiv@ukr.net | 12345678c! |
+  ?[32mAnd ?[0m?[32mUser clicks ov Yalla button?[0m                           ?[90m# com.ilCarro.stepDefinitions.LoginSteps.clicks_ov_Yalla_button()?[0m
+  ?[32mThen ?[0m?[32mUser verifies error?[0m                                  ?[90m# com.ilCarro.stepDefinitions.LoginSteps.verifies_error()?[0m
+  ?[32mAnd ?[0m?[32mUser quits browser?[0m                                    ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.quit_browser()?[0m
+
+@wrongPassword
+Scenario Outline: Login with valid email and wrong password ?[90m# src/test/resources/features/login.feature:32?[0m
+  ?[32mGiven ?[0m?[32mUser launches browser?[0m                               ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.launches_browser()?[0m
+  ?[32mWhen ?[0m?[32mUser opens ilCarro Home Page?[0m                         ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.open_ilCarro_HomePage()?[0m
+  ?[32mAnd ?[0m?[32mUser clicks on log in link?[0m                            ?[90m# com.ilCarro.stepDefinitions.LoginSteps.clicks_on_log_i_link()?[0m
+  ?[32mAnd ?[0m?[32mUser enters email and wrong password?[0m                  ?[90m# com.ilCarro.stepDefinitions.LoginSteps.enter_email_and_wrong_password(io.cucumber.datatable.DataTable)?[0m
+    | email       | password    |
+    | kiv@ukr.net | 1234456789! |
+  ?[32mAnd ?[0m?[32mUser clicks ov Yalla button?[0m                           ?[90m# com.ilCarro.stepDefinitions.LoginSteps.clicks_ov_Yalla_button()?[0m
+  ?[31mThen ?[0m?[31mUser verifies error?[0m                                  ?[90m# com.ilCarro.stepDefinitions.LoginSteps.verifies_error()?[0m
+      ?[31mjava.lang.AssertionError
+	at com.ilCarro.pages.LoginPage.getError(LoginPage.java:58)
+	at com.ilCarro.stepDefinitions.LoginSteps.verifies_error(LoginSteps.java:45)
+	at âœ½.User verifies error(file:///C:/MyAIT/QA/ilCarro_Cucumber/src/test/resources/features/login.feature:25)
+?[0m
+  ?[36mAnd ?[0m?[36mUser quits browser?[0m                                    ?[90m# com.ilCarro.stepDefinitions.HomePageSteps.quit_browser()?[0m
+]]></system-out>
+  <system-err><![CDATA[???. 11, 2023 12:50:55 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+???. 11, 2023 12:51:05 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+???. 11, 2023 12:51:10 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+???. 11, 2023 12:51:15 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+]]></system-err>
+</testsuite>
